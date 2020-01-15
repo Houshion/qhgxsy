@@ -1,0 +1,38 @@
+page,
+.h100 {
+  height: 100%
+}
+
+.list {
+  height: 25%;
+}
+
+.index1 {
+  background: url("/image/index1.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.index2 {
+  background: url("/image/index2.jpg") no-repeat;
+  background-size: 99%;
+}
+
+.index3 {
+  background: url("/image/index3.jpg") no-repeat;
+  background-size: 99%;
+}
+
+.index4 {
+  background: url("/image/index4.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.index5 {
+  background: url("/image/index5.jpg") no-repeat;
+  background-size: 99%;
+}
+
+.index6 {
+  background: url("/image/index6.jpg") no-repeat;
+  background-size: 99%;
+}

@@ -1,0 +1,35 @@
+<view class="repair">
+  <view class='p10 flex-csb bg-ff m10'>
+    <!-- <text class='c9'>{{macno}}</text> -->
+    <input class='flex1' placeholder='扫描二维码或手动输入编号' value='{{macno}}' bindinput='macnoInput'/>
+    <image src='/image/i_scan3.png' style='width:40rpx;' mode='widthFix' bindtap='scan'></image>
+  </view>
+  <view class='p10 bg-ff m10'>
+    <view class='flex-cfs'>
+      <image src='/image/ic_question.png' style='width:40rpx;' mode='widthFix'></image>
+      <text class='c9 ml10 bb-e5 flex1'>选择问题类型</text>
+    </view>
+    <view class='flex-cfs r-wrap'>
+      <text class='menuList b-e5 p10_20 br8 mr20 mtb10 {{isChecked==index?"active":""}}' data-index="{{index}}" data-name="{{item}}" wx:for="{{questList}}" wx:key="*this" wx:index="index" bindtap='choseType'>{{item}}</text>
+    </view>
+  </view>
+  <view class='p10 bg-ff m10'>
+    <view class='flex-cfs'>
+      <image src='/image/ic_more.png' style='width:40rpx;' mode='widthFix'></image>
+      <text class='c9 ml10 flex1'>问题补充描述</text>
+    </view>
+    <textarea placeholder="请描述你的问题" name="content" placeholder-class="ph-style" class="w100 f16 c3 ptb12" style="height:200rpx;" bindinput="checkText"></textarea>
+    <view class="w100 flex-cfs ptb12">
+      <block wx:if="{{lispic.length>0}}" wx:for="{{lispic}}" wx:key="*this">
+        <view class='pic_wrap'>
+          <image class="pic" src="{{item}}"></image>
+          <view class='delete flex_aj font12 cf flex-center' bindtap='indexpic_delete' data-index='{{index}}'>X</view>
+        </view>
+      </block>
+      <view class='pic_wrap ml10' bindtap='choice'>
+        <image class="pic" src="/image/ic_camare.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='main_btn' bindtap='submit'>提交</view>

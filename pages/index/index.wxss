@@ -1,0 +1,70 @@
+page, .h100 {
+  height: 100%;
+  background: #efefef;
+  font-size: 0.8rem;
+}
+
+swiper {
+  height: 200px;
+}
+
+swiper image {
+  width: 100%;
+  height: 200px;
+}
+
+.wx-swiper-dots {
+  position: relative;
+  left: unset !important;
+  right: 0;
+}
+
+
+.ohide_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.wrap {
+  height: auto;
+  position: relative;
+}
+
+swipers {
+  height: 350rpx;
+}
+
+/*用来包裹所有的小圆点  */
+
+.dots {
+  width: 156rpx;
+  height: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  bottom: 20rpx;
+}
+
+/*未选中时的小圆点样式 */
+
+.dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  margin-right: 14rpx;
+  background-color: #d8d8d8;
+}
+
+/*选中以后的小圆点样式  */
+
+.active {
+  width: 18rpx;
+  height: 18rpx;
+  background-color: #21ae3c;
+}

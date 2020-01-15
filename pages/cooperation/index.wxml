@@ -1,0 +1,8 @@
+<!--pages/cooperation/index.wxml-->
+<view class='p10 bg-ff m20 br8 flex-cfs'>
+<input type='text' placeholder='请输入联系人姓名' bindinput='nameInput' value='{{nickname}}'/>
+</view>
+<view class='p10 bg-ff m20 br8 flex-cfs mt10'>
+<input type='number' placeholder='请输入联系电话' bindinput='mobileInput' value='{{mobile}}' maxlength='11'/>
+</view>
+<view class='main_btn flex-center' bindtap='submit'>提交</view>

@@ -1,0 +1,13 @@
+<map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="13" bindcontroltap="controltap" bindmarkertap="markertap" polyline="{{polyline}}" markers="{{markers}}" 
+style="width: 100%; height: 100vh;">
+  <cover-view class="bg-ff flex-csb m20 p20" wx:if="{{listShow}}" bindtap='setNavigation' data-address="{{current_location.address}}" data-lat="{{current_location.lat}}" data-lng="{{current_location.lng}}">
+    <cover-view class='flex-dcf'>
+      <cover-view class='fw-bold'>{{current_location.title}}</cover-view>
+      <cover-view class='c9 flex-cfs mt10'>
+        <cover-image src='/image/ic_location_05.png' style='width:19rpx;' mode='widthFix'></cover-image>
+        <cover-view class='c9 ml10'>{{current_location.address}}</cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-image src='/image/navigation.png' style='width:80rpx;' mode='widthFix'></cover-image>
+  </cover-view>
+</map>

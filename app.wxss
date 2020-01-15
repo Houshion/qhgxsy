@@ -1,0 +1,20 @@
+@import "./style/base.wxss";
+/*通用样式开始*/
+
+.cmain{}
+
+.cfff {
+	color: #ffffff
+}
+
+.cccc {
+	color: #cccccc
+}
+
+.bfff {
+	background: #ffffff
+}
+.arrow-icon{
+  width: 12rpx;
+  height: 22rpx;
+}

@@ -1,0 +1,16 @@
+<!--pages/changePhone/index.wxml-->
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class='bg-ff h100'>
+  <view class='w100 flex-center'>
+    <!-- <text>{{tools.dlcurl+logo}}</text> -->
+    <image src='/image/image_logo.png' class='img-logo'></image>
+  </view>
+  <view class='bb-e5 mlr20 ptb10'>
+    <input type="number" placeholder="请输入手机号码" class="inp-holder" maxlength="11" value="{{mobile}}" bindinput="mobileInput" />
+  </view>
+  <view class='bb-e5 mlr20 ptb10 flex-csb'>
+    <input type="number" placeholder="请输入验证码" maxlength="6" value="{{code}}" bindinput="codeInput" />
+    <button class='bg-diy p10 cf br12 yzm flex-center' bindtap="getCode" disabled="{{sendStatus}}">{{codeText}}</button>
+  </view>
+  <view class='main_btn flex-center' bindtap='submit'>绑定手机号</view>
+</view>

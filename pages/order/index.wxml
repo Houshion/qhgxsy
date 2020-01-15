@@ -1,0 +1,25 @@
+<view wx:if='{{isShow}}'>
+  <view class="order" wx:if="{{orderArray.length>0}}">
+    <view class='bg-ff mt20 p10' wx:for="{{orderArray}}" wx:key="*this">
+      <view class='c9 ptb10'>{{item.ctime}}</view>
+      <view class='flex-csb pb10'>
+        <text>套餐时间 {{item.goods_info.time}}小时</text>
+        <view>
+          <text class='c9'>订单金额</text> ￥{{item.orders_money}}</view>
+      </view>
+      <view class='flex-csb pb10'>
+        <text>使用时间 {{item.usetime}}小时</text>
+        <view>
+          <text class='c9'>消费金额</text> ￥{{item.money}}</view>
+      </view>
+      <view class='pb10' wx:if="{{item.refund_money>0}}">
+        退款金额 ￥{{item.refund_money}}</view>
+    </view>
+  </view>
+  <view class="w100 plr12 mt60" wx:else>
+    <view class="flex-dcc pt60">
+      <image src="/image/empty.png" mode="widthFix" class="empty-icon"></image>
+      <text class="f14 c9 mt6">暂无数据</text>
+    </view>
+  </view>
+</view>

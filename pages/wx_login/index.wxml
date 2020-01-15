@@ -1,0 +1,6 @@
+<view class="flex-dcc jc-center w100 p12 bg-ff" style="height:100vh">
+     <image src="/image/banner1.png" mode="widthFix" class="logo-icon"></image> 
+    <button open-type="getUserInfo" hover-class="none" class="flex-center common-btn" bindgetuserinfo="wx_loginByButton">
+        <text class="main_btn">点击授权微信登录</text>
+    </button>
+</view>

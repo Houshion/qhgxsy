@@ -1,0 +1,22 @@
+<view class="main h100">
+	<view class="flex r-wrap h100">
+		<view class="list w100 ai-center" data-url="/pages/profile/index" bindtap="goTo">
+			<image src="/image/index1.jpg" mode="widthFix"></image>
+		</view>
+		<view class="list w50 pr6" data-url="/pages/news/index" bindtap="goTo">
+			<image src="/image/index2.jpg" mode="widthFix"></image>
+		</view>
+		<view class="list w50 pl6" data-url="/pages/map/index" bindtap="goTo">
+			<image src="/image/index3.jpg" mode="widthFix"></image>
+		</view>
+		<view class="list w100" data-url="/pages/question/index" bindtap="goTo">
+			<image src="/image/index4.jpg" mode="widthFix"></image>
+		</view>
+		<view class="list w50 pr6" data-url="/pages/center/index" bindtap="goTo">
+			<image src="/image/index5.jpg" mode="widthFix"></image>
+		</view>
+		<view class="list w50 pl6" data-url="6" bindtap="goTo">
+			<image src="/image/index6.jpg" mode="widthFix"></image>
+		</view>
+	</view>
+</view>

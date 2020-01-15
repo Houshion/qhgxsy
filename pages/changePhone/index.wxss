@@ -1,0 +1,13 @@
+/* pages/changePhone/index.wxss */
+
+.img-logo {
+  margin: 100rpx 0;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+
+.yzm {
+  width: 200rpx;
+  height: 61rpx;
+}

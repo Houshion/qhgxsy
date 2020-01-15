@@ -1,0 +1,38 @@
+.menuList.active{
+  background: #21ae3c;
+  color: #fff;
+  border: 1px solid #21ae3c;
+}
+.p5_10{
+  padding: 5rpx 10rpx;
+}
+.p10_20{
+  padding: 10rpx 20rpx;
+}
+.upload-icon{
+	width:100%;
+	height:220rpx;
+}
+.pic_wrap {
+  position: relative;
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+  margin-right: 14rpx;
+  overflow: hidden;
+  float: left;
+}
+.pic_wrap .delete{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(0,0,0,.5);
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+
+.pic {
+  width: 138rpx;
+  height: 138rpx;
+}

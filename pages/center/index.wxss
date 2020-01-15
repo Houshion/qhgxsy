@@ -1,0 +1,7 @@
+.banner_center {
+  position: fixed;
+  width: 750rpx;
+  height: 315rpx;
+  left: 0;
+  top: 0;
+}

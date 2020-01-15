@@ -1,0 +1,32 @@
+.countDown {
+  width: 330rpx;
+  height: 330rpx;
+  background: linear-gradient(to bottom, #79e6d6, #9ac7e0);
+  border-radius: 50%;
+  /* padding: 10rpx; *//* border: 1px solid #9ac7e0; */
+  margin: 250rpx auto 0;
+}
+
+.countDown::before {
+  content: '';
+  width:360rpx;
+  height: 360rpx;
+  border:1px solid #9ac7e0;
+  position: absolute;
+  top: -17rpx;
+  left: -18rpx;
+  border-radius: 50%;
+}
+
+.useBtn {
+  width: 230rpx;
+  height: 80rpx;
+}
+
+.b-diy {
+  border: 1px solid #21ae3c;
+}
+
+.c-diy {
+  color: #21ae3c;
+}

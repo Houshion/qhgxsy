@@ -1,0 +1,5 @@
+.logo-icon {
+    width:90%;
+    margin-bottom: 300rpx;
+    margin-top: -100rpx;
+}

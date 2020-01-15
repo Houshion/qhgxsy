@@ -1,0 +1,11 @@
+<view class="using h100 bg-ff flex-dcc" wx:if="{{isShow}}">
+  <view class='countDown flex-dcc jc-center p-r'>
+    <view class='cf'>{{status_name}}</view>
+    <view class='cf f30'>{{time}}</view>
+  </view>
+  <view class='useBtn flex-center bg-diy cf br8 mt60' bindtap='endUse'>结束使用</view>
+  <view class='useBtn flex-center b-diy c-diy br8 mt10' bindtap='backHome'>返回首页</view>
+  <view class='bottom-fixed flex-center'>
+    <image src='/image/image2.png' mode='widthFix' style='width:100%;'></image>
+  </view>
+</view>

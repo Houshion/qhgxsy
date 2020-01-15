@@ -1,0 +1,53 @@
+<view class='mask'></view>
+<view class="banner">
+  <view class="bg-pane w100 flex-dcc jc-center p-r">
+    <image src="/image/center_bg.png" style='width:750rpx;height:315rpx;'></image>
+    <navigator url="/pages/profile/index" class="banner_center flex-dcc jc-center">
+      <image src="{{avatar}}" class="br-circle" style="width:150rpx;height:150rpx"></image>
+      <view class="f15 cf mt8 fw-bold">{{nickname}}</view>
+    </navigator>
+  </view>
+  <!-- <view class="flex-center">
+    <image src="../../image/center_bg.png" mode="widthFix" style="height:310rpx;width:100%;"></image>
+    <view class=' '></view>
+    
+  </view> -->
+</view>
+<view class="w100 plr15 bg-ff mt10">
+  <navigator url="/pages/order/index" hover-class="none" class="flex-csb bb-e5 ptb15">
+    <view class="flex-cfs fg1">
+      <image src="../../image/ic_order.png" mode="widthFix" style="width:36rpx"></image>
+      <text class="f15 c0 flex-none pl8">订单信息</text>
+    </view>
+    <image src="../../image/icon_14.png" mode="widthFix" style="width:14rpx"></image>
+  </navigator>
+  <navigator url="/pages/repair/index" hover-class="none" class="flex-csb bb-e5 ptb15">
+    <view class="flex-cfs fg1">
+      <image src="../../image/ic_repair.png" mode="widthFix" style="width:36rpx"></image>
+      <text class="f15 c0 flex-none pl8">我要报障</text>
+    </view>
+    <image src="../../image/icon_14.png" mode="widthFix" style="width:14rpx"></image>
+  </navigator>
+  <button hover-class="none" class="flex-csb bb-e5 ptb15" open-type='share'>
+    <view class="flex-cfs fg1">
+      <image src="../../image/ic_invite.png" mode="widthFix" style="width:36rpx"></image>
+      <text class="f15 c0 flex-none pl8">邀请好友</text>
+    </view>
+    <image src="../../image/icon_14.png" mode="widthFix" style="width:14rpx"></image>
+  </button>
+  <navigator url="/pages/deposit/index" hover-class="none" class="flex-csb bb-e5 ptb15">
+    <view class="flex-cfs fg1">
+      <image src="../../image/ic_deposit.png" mode="widthFix" style="width:36rpx"></image>
+      <text class="f15 c0 flex-none pl8">我的押金</text>
+    </view>
+    <image src="../../image/icon_14.png" mode="widthFix" style="width:14rpx"></image>
+  </navigator>
+  <navigator url="/pages/about/index" class="flex-csb ptb15" bindtap="dialPhone">
+    <view class="flex-cfs fg1">
+      <image src="../../image/ic_us.png" mode="widthFix" style="width:36rpx"></image>
+      <text class="f15 c0 flex-none pl8">关于我们</text>
+    </view>
+    <text class="c9 f15 flex-none pr8">{{user_info.tel}}</text>
+    <image src="../../image/icon_14.png" mode="widthFix" style="width:14rpx"></image>
+  </navigator>
+</view>

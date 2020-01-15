@@ -1,0 +1,52 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<import src="../wxParse/wxParse.wxml" />
+<view class="main h100">
+  <view class="wrap">
+    <swiper class="swipers" autoplay="{{autoplay}}" current="{{currentSwiper}}" bindchange="swiperChange">
+      <block wx:for="{{swiperImg}}">
+        <swiper-item>
+          <image src="{{tools.dlcurl+item.link}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!--重置小圆点的样式  -->
+    <view class="dots">
+      <view wx:for="{{swiperImg}}" wx:key="index">
+        <view class="dot{{currentSwiper == index-1 ? ' active' : ''}}"></view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="swiper">
+    <swiper style="height:400rpx" indicator-dots="true" autoplay="true" interval="2000" duration="500" circular="true" indicator-active-color="#21ae3c" indicator-color="#d8d8d8">
+      <block wx:for="{{swiperImg}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{tools.dlcurl+item.link}}" class="slide-image" style="width:740rpx;height:400rpx" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+  <view class="pd-10 font16 fontb fw-bold p10">最新资讯</view>
+  <view wx:if="{{isLoad}}">
+    <view class="newsList pd-lr-10" wx:if="{{noEmpty}}">
+      <view class="list radius5 p10 flex bg-ff mb10" wx:for="{{newsList}}" wx:key="*this">
+        <image class="slide-image wd-25 mr10" mode="widthFix" src="{{tools.dlcurl+item.pic}}" style='width:170rpx;height:170rpx;'></image>
+        <view class="wd-70 flex1">
+          <view>
+            <view class="title fw-bold">{{item.title}}</view>
+            <view class='ohide_2'>
+              <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            </view>
+            <view class="content c9 mt10">{{item.content}}</view>
+            <view class="flex-cfe c9 mt10">{{tools.format(item.ctime,'Y-m-d H:i:s')}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="w100 plr12 bg-ff" wx:else>
+      <view class="flex-dcc ptb60">
+        <image src="/image/empty.png" mode="widthFix" class="empty-icon"></image>
+        <text class="f14 c9 mt6">暂无数据</text>
+      </view>
+    </view>
+  </view>
+</view>

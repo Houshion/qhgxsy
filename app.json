@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/using/index",
+    "pages/changePhone/index",
+    "pages/wx_login/index",
+    "pages/center/index",
+    "pages/choose/index",
+    "pages/map/index",
+    "pages/repair/index",
+    "pages/order/index",
+    "pages/cooperation/index",
+    "pages/deposit/index",
+    "pages/about/index",
+    "pages/profile/index",
+    "pages/centerInfo/index",
+    "pages/scan/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "奇汇共享输液"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "list": [
+      {
+        "selectedIconPath": "./image/ic_home_1.png",
+        "iconPath": "./image/ic_home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "./image/i_scan2.png",
+        "iconPath": "./image/i_scan.png",
+        "pagePath": "pages/scan/index",
+        "text": "扫一扫"
+      },
+      {
+        "selectedIconPath": "./image/i_address1.png",
+        "iconPath": "./image/i_address.png",
+        "pagePath": "pages/map/index",
+        "text": "附近"
+      },
+      {
+        "selectedIconPath": "./image/i_cooperation_1.png",
+        "iconPath": "./image/i_cooperation.png",
+        "pagePath": "pages/cooperation/index",
+        "text": "合作"
+      },
+      {
+        "selectedIconPath": "./image/i_my1.png",
+        "iconPath": "./image/i_my.png",
+        "pagePath": "pages/center/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

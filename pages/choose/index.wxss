@@ -1,0 +1,31 @@
+.bg-icon {
+  background: #ffefcc;
+  color: #f3a807;
+  font-size: 24rpx;
+}
+
+.choseBox {
+  width: 448rpx;
+  height: 110rpx;
+  border: 1px solid #ccc;
+  border-radius: 15rpx;
+  color: #999;
+}
+
+.active {
+  background: #21ae3c;
+  color: #fff;
+  border: 1px solid #21ae3c;
+}
+.choseBox.active .money{
+  color: #fff;
+}
+.mask{
+  background: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100
+}

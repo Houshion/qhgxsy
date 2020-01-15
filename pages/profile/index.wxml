@@ -1,0 +1,20 @@
+<view class="flex-csb mtb12 bg-ff p12" bindtap="uploadImage">
+  <text class="f16 c3 flex-none">头像</text>
+  <view class="flex-cfs flex-none">
+    <image src="{{avatar}}" class="avatar-icon" style='border-radius:50%;'></image>
+  </view>
+</view>
+
+<view class="bg-ff">
+  <view class="flex-csb p12 bb-e5">
+    <text class="f16 c3">昵称</text>
+    <text class="f16 c9">{{nickname}}</text>
+  </view>
+  <navigator url="/pages/changePhone/index" class="flex-csb p12 bb-e5">
+    <text class="f16 c3 flex-none">手机</text>
+    <view class="flex-cfs flex-none">
+      <text class="f16 c9">{{phone}}</text>
+      <image src="/image/icon_14.png" class="arrow-icon ml8"></image>
+    </view>
+  </navigator>
+</view>

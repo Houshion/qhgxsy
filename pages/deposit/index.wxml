@@ -1,0 +1,9 @@
+<view class="deposit">
+  <view class='bg-ff br12 p20 flex-csb m20'>
+    <view class='flex-dcf'>
+      <view style="color:#e27e20;">￥<text class='f30' style="color:#e27e20;">{{uDeposit}}</text></view>
+      <view style="color:rgba(226,126,32,.6)">我的押金</view>
+    </view>
+    <view class='bg-diy cf flex-center br8 returnDeposit' bindtap='returnDeposit'>退还押金</view>
+  </view>
+</view>

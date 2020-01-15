@@ -1,0 +1,6 @@
+<view class="about p10">
+  <image class='br8' src='{{aboutImg}}' style='width:100%' mode="widthFix"></image>
+  <view class='bg-ff br8 mt10 p10'>
+    {{content}}
+  </view>
+</view>

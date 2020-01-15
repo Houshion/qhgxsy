@@ -1,0 +1,3 @@
+<view class="scan vh100 bg-ff flex-dcc jc-center">
+<view class='main_btn' bindtap='scan'>扫一扫</view>
+</view>

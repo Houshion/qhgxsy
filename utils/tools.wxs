@@ -1,0 +1,68 @@
+/*日期格式化*/
+function formatDate(now, ff) {
+  var year = now.getFullYear();
+  var month = now.getMonth() + 1 < 10 ? '0' + (now.getMonth() + 1) : now.getMonth() + 1;
+  var date = now.getDate() < 10 ? '0' + now.getDate() : now.getDate();
+  var hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours();
+  var minute = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes();
+  var second = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds();
+  if (ff == 'Y-m-d') {
+    return year + "-" + month + "-" + date;
+  } else if (ff == 'Y-m-d H:i:s') {
+    return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
+  } else if (ff == 'Y-m-d H:i') {
+    return year + "-" + month + "-" + date + " " + hour + ":" + minute;
+  }
+}
+/*秒转时间*/
+function timeStamp(second_time) {
+  var time = parseInt(second_time) + "";
+  if (parseInt(second_time) > 60) {
+    var second = parseInt(second_time) % 60;
+    var min = parseInt(second_time / 60);
+    second = (second < 10) ? ('0' + second) : second
+    min = (min < 10) ? ('0' + min) : min
+    time = min + ":" + second + "";
+    if (min > 60) {
+      min = parseInt(second_time / 60) % 60;
+      var hour = parseInt(parseInt(second_time / 60) / 60);
+      second = (second < 10) ? ('0' + second) : second
+      min = (min < 10) ? ('0' + min) : min
+      hour = (hour < 10) ? ('0' + hour) : hour
+      time = hour + ":" + min + ":" + second + "";
+
+      if (hour > 24) {
+        hour = parseInt(parseInt(second_time / 60) / 60) % 24;
+        var day = parseInt(parseInt(parseInt(second_time / 60) / 60) / 24);
+        second = (second < 10) ? ('0' + second) : second
+        min = (min < 10) ? ('0' + min) : min
+        hour = (hour < 10) ? ('0' + hour) : hour
+        time = day + ":" + hour + ":" + min + ":" + second + "";
+      }
+    }
+  } else {
+
+    time = '00:' + (time < 10 ? '0' + time : time);
+  }
+  return time;
+}
+
+function format(time, ff) {
+  var time = time.toString();
+  if (time.length == 10) time = time * 1000;
+  var d = getDate(time * 1);
+  return formatDate(d, ff);
+}
+
+function string_to_array(str, flag) {
+  return str.split(flag);
+}
+module.exports = {
+  toFix: function(value, count) { //保留小数点，count为保留位数
+    return Number(value).toFixed(count)
+  },
+  format: format,
+  timeStamp: timeStamp,
+  dlcurl: 'https://qhsyjwq.https.xiaozhuschool.com/',
+  string_to_array: string_to_array
+}
